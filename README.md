@@ -8,7 +8,6 @@ I have added a new component called `App` which is the entry point of our applic
 and another component called `GameBoard`. The `GameBoard` component has been created inside 
 the `src/components` directory and imported into the `App` component using ES6 import statement.
 
-The `GameBoard` component displays an unordered list (`ul`) containing two list items  (`li`). Each item represents a todo task and contains a heading element (`h2`) for the
 
 ### `GameBoard.js`
 
