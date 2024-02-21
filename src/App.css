@@ -1,38 +1,96 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.game-board {
+  margin-top: 10%;
+  box-sizing: border-box;
+  align-items: center;
+  width:  50%;
+  height: 100%;
+  max-width:  550px;
+  background-color: #d5ccf7;
+  border: 6px solid #7f64bd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.status {
+  font: 2em sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin-top: -60px;
+  border:4px solid #7f64bd;
+  color: #1a1717;
+  background-color: #c3b8f0;
+  z-index: 1;
+}
+
+.board{
+  padding: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.board-row {
+  display: flex;
+}
+
+.square {  
+  background-color: #c3b8f0;
+  border: 2px solid #7f64bd;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 110px;
+  width: 110px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+}
+
+.game-info {
+  margin-top: 20px;
+  border: 4px solid #7f64bd;
+  height:  100px;
+  width: 50%;
+  max-width:  550px;
+  display: inline-block;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 300px; /* Adjust max-width as needed */
+  padding: 10px;
+  margin-left: 20%;
+}
+
+.button-container button {
+  margin-right: 20px;
+  font-size: 20px;
+  height: 110px;
+  width: 100%;
+  background-color: #c3b8f0;  
+  border: 2px solid #7f64bd;
+}
+
+@media (max-width: 600px) {
+  .square {
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
+
+.suggested {
+  background-color: #ffff99; /* Choose your preferred highlight color */
+}
+
+
